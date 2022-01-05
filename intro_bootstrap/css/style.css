@@ -1,0 +1,37 @@
+body{
+    font: 20px Chalkduster, fantasy;
+
+}
+.navbar{
+    background-color: #000000
+    ;
+}
+
+.quem-somos{
+    background-color:  #EDC100
+    ;
+    color: white
+    ;
+}
+
+
+.margin{
+    /*(margem externa)margin-top: 30px; no caso de cores o mais indicado é o padding-top, pois ele é margem interna
+    padding-top: 15px;*/
+    padding-bottom: 50px;
+    padding-top: 10px;
+
+}
+
+.parceiros{
+    background-color: #C89C76;
+}
+
+.servicos{
+    background-color:   #EDC100    ;
+}
+
+.bg-footer{
+    background-color: black;
+    color: white;
+}
