@@ -13,7 +13,14 @@
 ### DOM:
 
 - Document Object Model
-
 - Estrutura dos elementos dentro da janela
 
-  
+
+
+
+### Frameworks e Bibliotecas
+
+- VueJs
+- Angular
+- React
+- JQuery

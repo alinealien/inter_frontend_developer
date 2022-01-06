@@ -1,0 +1,1 @@
+alert("Apesar de ser filha da Terra... Minha raça vem das Estrelas...");
