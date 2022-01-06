@@ -13,5 +13,7 @@
 ### DOM:
 
 - Document Object Model
+
 - Estrutura dos elementos dentro da janela
-- 
+
+  
