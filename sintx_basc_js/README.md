@@ -457,6 +457,38 @@ console.log(a);
 
 
 
+### FUNÇÕES
+
+São blocos de comandos e instruções para execução de determinadas tarefas:
+
+Ex.: **function nomeDaFuncao(){ ${instrucao}; } nomeDaFuncao();**
+
+
+
+##### Como declarar:
+
+Geralmente se utiliza a palavra reservada **"function"** seguida de parênteses **"()"** e chaves **"{}"**:
+
+EX.: **function** funcao(){ **console.log**("mensagem"); } funcao();
+
+**()** - indica que é um objeto do tipo function;
+
+**{}** - indica que é um bloco de instruções;
+
+
+
+#### FUNÇÕES COM PARÂMETROS
+
+As funções podem receber em sua declaração, parâmetros, que servem como variáveis, onde sua atribuição pode ser feita durante a chamada da função:
+
+EX.: **function nomeDaFuncao(parametro){ ${instrução}; } nomeDaFuncao(valorDoParametro);**
+
+EX2.: **function** mensagem(primeiro, segundo){
+
+**console.log(primeiro, segundo); nomeDaFuncao("Tudo certo", "jovem!);}
+
+
+
 
 
 
