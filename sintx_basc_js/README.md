@@ -489,6 +489,64 @@ EX2.: **function** mensagem(primeiro, segundo){
 
 
 
+#### FUNÇÕES DECLARATIVAS
+
+São funções  que possuem o uso mais comum, deve ser declarada usando a palavra reservada **"function"** seguida do **nome da função**, parÊnteses **()** e chaves **{}**:
+
+EX.: **function nomeDaFuncao(){
+
+${intrucao};
+
+}
+
+// o **nome da função é obrigátorio**
+
+
+
+#### EXPRESSÕES DE FUNÇÕES
+
+São funções atribuídas à expressoes. A nomeação das funções por expressão é opcional:
+
+EX.: 1: **var** funcao = function(){
+
+${intrução};
+
+};
+
+
+
+#### ARROW FUNCTION
+
+São funções de expressão de sintaxe curta. Arrow functions sempre serão anônimas, e portanto não podem ser nomeadas. Deve ser declara com parênteses **()**, seguindo de **"=>"** e depois chaves **{}**.
+
+EX. 1: **var** funcao = () =>{
+
+${instrucao};
+
+}
+
+
+
+### FUNÇÕES ARITMÉTRICAS
+
+#### Criando uma calculadora
+
+Para este exercício vamos utilizar alguns métodos nativos do JavaScript:
+
+- **Number()** - para converter valores em números;
+
+- **Prompt()** - para registrar entradas de usuários;
+
+- **Alert()** - para mostrar mensagem ao usuário;
+
+- **Template Strings** - para usar strings junto com expressões;
+
+  
+
+
+
+
+
 
 
 
