@@ -170,5 +170,298 @@ OBS: O índice só é acessado por um número inteiro, onde 0 é o primeiro índ
 
 
 
+### Manipulando Arrays
+
+ao ser declarado, o Array traz consigo uma série  de métodos para manipula-lo.
+
+- **forEach()** - itera um array;
+- **push()** - add item no final do array;
+- **pop()** - remove item no final do array;
+- **shift()** - remove item no inicio do array;
+- **unshift()** - add item no inicio do array;
+- **indexOf** - retorna o índice de um valor;
+- **splice()** - remove ou substitui um item pelo índice;
+- **slice()** - retorna uma parte de um array existente;
+
+
+
+### Objetos
+
+Dados que possuem **propriedade** e **valores** que definem  suas caracteristicas. Deve ser declarado entre as chaves "{}";
+
+EX.: imagine uma xícara azul. Ela tem cor, pode ter vários tamanhos e funções (quero cafééé). Pode ser declarada assim:
+
+**var** xicara = {
+
+cor: 'azul',
+
+tamanho: 'p',
+
+funcao: tomarCafe()
+
+}
+
+
+
+### Manipulando Objetos
+
+As propriedades de objetos podem ser atibuidas  à variáveis, facilitando a manipulação de objeto. Chamamos isso de desestruturação.
+
+EX.: **var** xicara = {cor:'azul', tamanho: 'p', funcao: tomarCafe()}
+
+​       **var** cor = xicara.cor;
+
+​       **var** tamanho = xicara.tamanho;
+
+​      **var** funcao = tomarCafe();  
+
+}
+
+As propriedades de obejtos pode ser atríbuidas à variáveis, facilitando a manipulação do objeto. Chamamos isso de desestruturação.
+
+EX.: **var** xicara = {cor:'azul', tamanho: 'p', funcao: tomarCafe()}
+
+​       **var** cor = xicara.cor;
+
+​       **var** tamanho = xicara.tamanho;
+
+​      **var** funcao = tomarCafe();  
+
+}
+
+Outra forma de fazer a desestruturação é utilizando chaves ao declarar a variável:
+
+EX.: **var** xicara = {cor: 'azul', tamanho: 'p', funcao: tomarCafe()}
+
+​        **var** { cor, tamanho, funcao } = xicara;
+
+
+
+### Estruturas Condicionais
+
+São instruções para realizar determinadas tarefas a partir de uma condição, seja de decisão ou repetição;
+
+EX.: Um jogo precisa mudar o placar toda vez que um jogador marca pontuação;
+
+#### IF (SE)
+
+Podemos usar as palavras reservadas "if" para estabelecer uma condição:
+
+EX.: **var** jogador1 = 0;
+
+​      **var** jogador2 = 0;
+
+​      **if**(jogador1 > 0){
+
+​      console.log('jogador1 marcou ponto');
+
+}
+
+// como ler: se o jogador1 tiver valor maior que 0 ele marcou ponto.
+
+
+
+#### ELSE (SE NÃO)
+
+No caso de a condição**não** ser atendida podemos usar o **"else"**:
+
+EX.:
+
+​      **var** jogador1 = 1;
+
+​      **var** jogador2 = 0;
+
+​      **if** (jogador1 > 0 ){
+
+​      console.log('Jogador 1 marcou ponto')
+
+​      } else {
+
+​      console.log('Ninguém marcou ponto ')
+
+​     }
+
+
+
+#### ELSE IF 
+
+Caso haja mais de uma condição uttiliza-se o **eslse if**.
+
+EX.: **var** jogador1 = 1; 
+
+​       **var** jogador2 = 0;
+
+​    **if** (jogador1 > 0){
+
+   console.log('Jogador 1 marcou ponto')
+
+   }else if (jogador2 > 0) {
+
+  console.log('Jogador 2 marcou ponto')
+
+  }else{
+
+  console.log('Ninguem marcou ponto')
+
+  }
+
+
+
+#### NINHO DE IF
+
+Podemos também usar o **"if"** dentro de um outro **"if"**, chamamos isso de **aninhamento de if's** ou **ninho de if's**.
+
+EX.: **if** (jogador1 = -1){
+
+​    **if**(jogador1 > 0){
+
+​     console.log('Jogador 1 marcou ponto');
+
+​    }else{
+
+​      console.log('Ninguem marcou ponto');
+
+​     }
+
+​     }else {
+
+​     console.log('jogador inválido');
+
+}
+
+
+
+### IF TERNÁRIO
+
+Podemos também fazer uma verificação em uma única linha usando o "if" ternário.
+
+EX.: **[condição] ? [instrução1] : [instrução2];
+
+jogador1 > 0 **?** console.log('marcou ponto') : console.log("não marcou ponto");
+
+// lembre de usar a interrogação **?** e dois pontos **:**
+
+
+
+### USANDO SWITCH/CASE
+
+O **"switch/case"** funciona como uma estrutura condicional também;
+
+EX.: **switch** (${expressao}) {
+
+**case 1:**
+
+**${instrucao};**
+
+**break;**
+
+**case 2 : **
+
+**$ {instrução};**
+
+**break;**
+
+**}**
+
+
+
+### ESTRUTURAS DE REPETIÇÃO
+
+#### LAÇÕS DE REPETIÇÃO
+
+São estruturas condicionais que repetem uma instrução até atingir determinada condição:
+
+- **For;**
+- **For/in;**
+- **For/of;**
+- **While;**
+- **Do/while;**
+
+##### FOR
+
+Funciona como uma repetição de instrução até que a condição seja falsa:
+
+**for([expressaoInicial]; [condicao]; [incremento];){ declaracao}**
+
+EX.: **var** array = ['valro1', 'valor2', 'valor3', 'valor4']
+
+​       **for**(**let** i = 0; i < array.length; i++) {
+
+**console.log**(i);
+
+}
+
+##### FOR/IN
+
+Funciona como uma repetição a partir de uma propriedade: 
+
+**for ([indice] in [objeto ou array]) { declaração }**
+
+EX.: **var** array = ['valor1', 'valor2', 'valor3', 'valor4']
+
+**for**(i **in** array) {
+
+**console.log**(i);
+
+}
+
+##### FOR/OF
+
+O **For/of** não funciona com objetos pois as propriedades variam, diferentes do índice em um array que sempre serão números inteiros.
+
+Mas e se eu quiser pegar o valor mesmo assim?
+
+EX.: **for**(i **of** object.propriedade) {
+
+**console.log**(i);
+
+}
+
+//porém cada caractere dentro do valor será Impresso em linhas separadas
+
+
+
+##### WHILE
+
+Executa uma instrução **"enquanto"** determinada condição for verdadeira, a verificação é feita antes da execução;
+
+EX.: **var** a = 0;
+
+**while** (a < 10) {
+
+a++;
+
+console.log(a);
+
+} 
+
+// como ler: enquanto a variável **a** for menor que 10 ela vai receber mais um e imprimir no console.
+
+
+
+##### DO/WHILE
+
+Executa uma instrução **"até que"** determinada condição seja falsa, a verificação é feita depois da execução;
+
+EX.: **var** a = 0;
+
+**do** {
+
+a++;
+
+console.log(a);
+
+}**while** (a < 10)
+
+//como ler: a variável **a** vai receber mais um e imprimir no console **até que** seu valor chegue a 10
+
+
+
+
+
+
+
+
+
 
 
